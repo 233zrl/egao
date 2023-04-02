@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>刀刀烈火,爆红包</title>
+  <style>
+    body {
+      background: black;
+      color: white;
+    }
+
+    video {
+      width: 100%;
+      margin-top: 20vh;
+    }
+
+    .div {
+      font-size: 20px;
+      color: #AAAAAD
+    }
+
+    .div2 {
+      font-size: 14px;
+      color: #606063;
+    }
+
+    .div2 span {
+      color: #394BFF;
+    }
+
+    .div3 {
+      color: black;
+      text-align: center;
+      width: 100%;
+      padding: 2vw;
+      margin-top: 5vw;
+      background: #394BFF;
+    }
+
+    .div3:active {
+      background: #9098A3;
+    }
+
+    .div4 {
+      position: absolute;
+      top: 70vh;
+    }
+
+    #dialog {
+
+      background: #404040;
+      border-radius: 20px;
+      width: 75vw;
+      height: 80vw;
+      position: absolute;
+      top: -15vh;
+    }
+
+    #dialog div {
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      width: 30vw;
+      height: 30vw;
+
+    }
+
+    .p {
+      font-size: 20px;
+      color: #DDDDDD;
+      text-align: center;
+    }
+
+    .p1 {
+      text-align: center;
+      font-size: 12px;
+      color: #9B9B9B;
+    }
+
+    .button {
+      display: block;
+      width: 50vw;
+      height: 11vw;
+      border-radius: 15px;
+      background: #ECECEC
+      
+    }
+    .button:active{
+      background: #C1C1C1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div4">
+    <div class="div">烈火皇城
+
+    </div>
+    <div class="div2">广州恒祥网络科技有限公司 <span> 隐私 </span><span> 权限 </span>版本10.317...</div>
+    <div class="div3">安装</div>
+  </div>
+
+
+  <dialog id="dialog">
+    <div><img src="/img/cq.jpg" alt="/img/cq.jpg"></div>
+    <p class="p">烈火皇城</p>
+    <p class="p1">新玩法,新地图,100倍掉率,送会员特权!</p>
+    <div><input value="关闭" onclick="tiao()" class="button" type="button"></div>
+  </dialog>
+
+  <input value="点击播放/共二十九秒" type="button" onclick="video()">
+
+  <video id="about-video" autoplay>
+    <source src="/mp4/1.mp4" type="video/mp4">
+  </video>
+
+
+  <script>
+    function video()
+    {
+      //获取video的id
+      var video1 = document.getElementById("about-video");
+
+      if (video1.paused) {
+
+        video1.play();
+      } else {
+        video1.pause();
+
+      }
+      setTimeout("dialog()", "27000");
+    }
+
+    function tiao() {
+      window.location.href = "/index114514.html"
+    }
+
+    function dialog() {
+      dialog = document.getElementById("dialog");
+
+      dialog.showModal();
+    }
+  </script>
+</body>
+
+</html>
